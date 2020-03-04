@@ -6,7 +6,7 @@ Sensor data representation is an android application written in 'KOTLIN' that li
 
 # Screenshots
 
-<img src="https://github.com/smtrz/Sensor-Data/blob/master/screen_1.png" alt="drawing" width="350"/>
+<img src="https://github.com/smtrz/Sensor-Data/blob/master/screen_1.png" alt="drawing" width="350" height="650"/>
 
 
 
