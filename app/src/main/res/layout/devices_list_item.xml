@@ -32,9 +32,10 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
 
-                android:background="@drawable/star"
+                android:background="@drawable/pess_logo"
 
                 android:contentDescription="Avatar" />
+
 
         </androidx.cardview.widget.CardView>
 
@@ -53,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:orientation="horizontal">
-
 
 
                 <TextView
@@ -82,8 +82,8 @@
                     android:ellipsize="marquee"
                     android:fontFamily="sans-serif"
                     android:singleLine="true"
-                    tools:text="This is the title line"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:text="This is the title line" />
 
             </LinearLayout>
 
@@ -107,76 +107,186 @@
             </LinearLayout>
 
 
-
             <LinearLayout
-                android:id="@+id/third_layout"
+                android:id="@+id/bottom_bar_1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:visibility="gone">
-
-                <TextView
-                    android:id="@+id/desc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:ellipsize="marquee"
-                    android:singleLine="true"
-                    android:textSize="14sp"
-                    tools:text="This is the third line" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/last_line"
-                android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:gravity="center"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="5dp"
+                android:gravity="left"
                 android:orientation="horizontal"
                 android:visibility="gone">
 
-                <TextView
-                    android:id="@+id/lang"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/star"
-                    android:gravity="center_vertical"
-                    android:drawablePadding="4dp"
-                    android:fontFamily="sans-serif"
-                    android:text="Hello World!"
-                    android:textSize="12sp" />
+                <!--  <TextView
+                      android:id="@+id/last_comm"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:drawableLeft="@drawable/star"
+                      android:drawablePadding="4dp"
+                      android:fontFamily="sans-serif"
+                      android:gravity="center_vertical"
+                      android:text="&#45;&#45;"
+                      android:textSize="10sp"
+                      android:visibility="gone" />-->
 
                 <TextView
-                    android:id="@+id/star"
+                    android:id="@+id/network_signal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:drawableLeft="@drawable/star"
+                    android:layout_marginLeft="25dp"
+                    android:drawableLeft="@drawable/ic_signal_cellular_3_bar_black_24dp"
                     android:drawablePadding="4dp"
-                    android:gravity="center_vertical"
                     android:fontFamily="sans-serif"
-                    android:text="Hello World!"
-                    android:textSize="12sp" />
+                    android:gravity="center_vertical"
+                    android:text="-- --"
+                    android:textSize="10sp" />
 
                 <TextView
-                    android:id="@+id/fork"
+                    android:id="@+id/battery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:drawableLeft="@drawable/star"
-android:gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:drawableLeft="@drawable/ic_battery_50_black_24dp"
                     android:drawablePadding="4dp"
                     android:fontFamily="sans-serif"
-                    android:text="Hello World!"
-                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:text="-- --"
+                    android:textSize="10sp"
+
 
                     />
+
+                <TextView
+                    android:id="@+id/air_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+
+                    android:drawableLeft="@drawable/ic_wb_sunny_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="-- --"
+                    android:textSize="10sp" />
             </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bottom_bar_2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
+                <!--    <TextView
+                        android:id="@+id/air_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/star"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:text="&#45;&#45;"
+                        android:textSize="10sp" />-->
+
+                <TextView
+                    android:id="@+id/relative_himidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:drawableLeft="@drawable/ic_wb_cloudy_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="-- --"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:drawableLeft="@drawable/ic_beach_access_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="-- --"
+                    android:textSize="10sp"
+
+                    />
+                <!--
+                                <TextView
+                                    android:id="@+id/last_commun"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_vertical"
+                                    android:text="&#45;&#45; &#45;&#45;"
+                                    android:textSize="10sp" />
+
+
+                                />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/bottom_bar_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <!--    <TextView
+                            android:id="@+id/last_commun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                            android:drawablePadding="4dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_vertical"
+                            android:text="&#45;&#45; &#45;&#45;"
+                            android:textSize="11sp" />
+
+
+                        />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/last_commun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:drawableLeft="@drawable/ic_visibility_black_24dp"
+            android:drawablePadding="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="-- --"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+
+        />
     </androidx.cardview.widget.CardView>
 
 

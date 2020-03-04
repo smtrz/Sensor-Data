@@ -34,9 +34,9 @@
         android:orientation="vertical"
         tools:context="com.tahir.pessl_instruments.MainActivity">
 
-<!--        <include-->
-<!--            android:id="@+id/tool_bar"-->
-<!--            layout="@layout/act_toolbar" />-->
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/act_toolbar" />
 
         <TextView
             android:id="@+id/empty_view"
@@ -47,21 +47,15 @@
             android:visibility="gone" />
 
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/pullToRefresh"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_repos"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="@color/list_margin"
+            android:scrollbars="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_repos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/list_margin"
-                android:scrollbars="vertical">
+        </androidx.recyclerview.widget.RecyclerView>
 
-            </androidx.recyclerview.widget.RecyclerView>
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 </RelativeLayout>

@@ -14,15 +14,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Meta (
+data class Rain48h (
 
-	@SerializedName("time") val time : Int,
-	@SerializedName("solarPanel") val solarPanel : Int,
-	@SerializedName("battery") val battery : Int,
-	@SerializedName("lw") val lw : Int,
-	@SerializedName("airTemp") val airTemp : Double,
-	@SerializedName("rh") val rh : Double,
-	@SerializedName("rain7d") val rain7d : Rain7d,
-	@SerializedName("rain48h") val rain48h : Rain48h,
-	@SerializedName("rain24h") val rain24h : Rain24h
+	@SerializedName("vals") val vals : List<Double>,
+	@SerializedName("sum") val sum : Double
 )

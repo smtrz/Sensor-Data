@@ -1,18 +1,32 @@
 package com.tahir.pessl_instruments.Models
+import com.google.gson.annotations.SerializedName
 
-data class DeviceInfo(
-    val config: Config,
-    val dates: Dates,
-    val flags: Flags,
-    val info: Info,
-   // val licenses: Boolean,
-    //val meta: Meta,
-    val metaUnits: String,
-    val metadata: Metadata,
-    val name: Name,
-    val networking: Networking,
-    val note: String,
-    val position: Position,
-    val rights: String,
-    val warnings: Warnings
+/*
+Copyright (c) 2020 Kotlin Data Classes Generated from JSON powered by http://www.json2kotlin.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
+
+
+data class DeviceInfo (
+
+	@SerializedName("name") val name : Name,
+	@SerializedName("rights") val rights : String,
+	@SerializedName("info") val info : Info,
+	@SerializedName("dates") val dates : Dates,
+	@SerializedName("position") val position : Position,
+	@SerializedName("config") val config : Config,
+	@SerializedName("metadata") val metadata : Metadata,
+	@SerializedName("meta") val meta : Meta,
+	@SerializedName("metaUnits") val metaUnits : String,
+	@SerializedName("networking") val networking : Networking,
+	@SerializedName("warnings") val warnings : Warnings,
+	@SerializedName("flags") val flags : Flags,
+	@SerializedName("note") val note : String
+//	@SerializedName("licenses") val licenses : Licenses
 )
